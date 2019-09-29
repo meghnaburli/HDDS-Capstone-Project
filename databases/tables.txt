@@ -1,0 +1,4 @@
+create table customer(pid int, pname varchar2(30), address varchar2(50), pnumber int, primary key(pid));
+create table trains (trnum int, tname varchar2(20), source varchar2(20), destination varchar2(20), departure_date date, arrival_date date, constraint trnum_unique UNIQUE (trnum));
+create table seat (seat_id int, t_num int, seat_type varchar2(20), status varchar(20), foreign key(t_num) references trains(trnum));
+create table journeys (p_id int, source_station varchar2(20), dest_station varchar2(20), cost int, foreign key(p_id) references customer(pid));

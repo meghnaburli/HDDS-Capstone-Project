@@ -1,0 +1,33 @@
+ insert into trains (trnum, tname, source, destination, departure_date, arrival_date) values (11011, 'konkan kanya', 'mumbai', 'thivim', '20-jun-10', '21-jun-10');
+ insert into trains (trnum, tname, source, destination, departure_date, arrival_date) values (12138, 'punjab mail', 'delhi', 'mumbai', '5-may-11','7-may-11');
+ insert into trains (trnum, tname, source, destination, departure_date, arrival_date) values (12904, 'golden temple', 'delhi', 'mumbai', '10-dec-11', '11-dec-11');
+ insert into trains (trnum, tname, source, destination, departure_date, arrival_date) values (12926, 'paschim exp', 'delhi', 'mumbai', '21-jun-10', '22-jun-10');
+ insert into trains (trnum, tname, source, destination, departure_date, arrival_date) values (19020, 'dehradun exp', 'delhi', 'mumbai', '5-may-11', '6-may-11');
+ insert into trains (trnum, tname, source, destination, departure_date, arrival_date) values (19215, 'saurashtra exp', 'mumbai', 'vadodra', '23-feb-11', '23-feb-11');
+ insert into trains (trnum, tname, source, destination, departure_date, arrival_date) values (12471, 'swaraj exp', 'mumbai', 'vadodra', '02-mar-10', '03-mar-10');
+ insert into trains (trnum, tname, source, destination, departure_date, arrival_date) values (59439, 'ahmadabad pass', 'mumbai', 'ahmadabad', '02-dec-11', '03-dec-11');
+ insert into trains (trnum, tname, source, destination, departure_date, arrival_date) values (12927, 'vadodra exp', 'mumbai', 'vadodra', '02-dec-11', '03-dec-11');
+ insert into trains (trnum, tname, source, destination, departure_date, arrival_date) values (12901, 'gujarat mail', 'mumbai', 'vadodra', '05-may-11', '06-may-11');
+
+ insert into trains (trnum, tname, source, destination, departure_date, arrival_date) values (12919, 'jaipur superfast', 'mumbai', 'jaipur', '15-apr-11', '16-apr-11');
+ insert into trains (trnum, tname, source, destination, departure_date, arrival_date) values (14649, 'saryuyamuna exp', 'lucknow', 'delhi', '4-sep-09', '4-sep-09');
+ insert into trains (trnum, tname, source, destination, departure_date, arrival_date) values (15279, 'poorbiya exp', 'lucknow', 'delhi', '26-oct-11', '27-oct-11');
+ insert into trains (trnum, tname, source, destination, departure_date, arrival_date) values (15715, 'garib nawaj exp', 'lucknow', 'delhi', '29-nov-11', '29-nov-11');
+ insert into trains (trnum, tname, source, destination, departure_date, arrival_date) values (12875, 'neelachal exp', 'lucknow', 'mumbai', '30-july-11', '30-july-11'); 
+ insert into trains (trnum, tname, source, destination, departure_date, arrival_date) values (14207, 'padmavat exp', 'lucknow', 'mumbai', '15-apr-10', '16-apr-10');
+ insert into trains (trnum, tname, source, destination, departure_date, arrival_date) values (12229, 'lucknow mail', 'lucknow', 'ahmedabad', '31-dec-10', '1-jan-11');
+ insert into trains (trnum, tname, source, destination, departure_date, arrival_date) values (16531, 'garib nawaj', 'ajmer', 'delhi', '23-feb-10', '23-feb-10');
+ insert into trains (trnum, tname, source, destination, departure_date, arrival_date) values (19708, 'aravali exp', 'ajmer', 'mumbai', '2-mar-10', '2-mar-10');
+ insert into trains (trnum, tname, source, destination, departure_date, arrival_date) values (10255, 'harsh exp', 'nashik', 'pune', '21-dec-10', '22-dec-10');
+
+ insert into trains (trnum, tname, source, destination, departure_date, arrival_date) values (14855, 'soham exp', 'cochin', 'banglore', '4-feb-11', '4-feb-11');
+ insert into trains (trnum, tname, source, destination, departure_date, arrival_date) values (12345, 'ramu mail', 'kolkata', 'mumbai', '9-apr-10', '10-apr-10');
+ insert into trains (trnum, tname, source, destination, departure_date, arrival_date) values (12500, 'bhopal exp', 'bhopal', 'delhi', '20-dec-10', '21-dec-10');
+ insert into trains (trnum, tname, source, destination, departure_date, arrival_date) values (17855, 'lalu exp', 'lucknow', 'ranchi', '30-nov-11', '30-nov-11');
+ insert into trains (trnum, tname, source, destination, departure_date, arrival_date) values (12035, 'jammu tawi', 'mumbai', 'jammu', '1-feb-11', '4-feb-11');
+ insert into trains (trnum, tname, source, destination, departure_date, arrival_date) values (10022, 'amritsar mail', 'pune', 'amritsar', '21-dec-10', '21-dec-10');
+ insert into trains (trnum, tname, source, destination, departure_date, arrival_date) values (20121, 'jhol train', 'jammu', 'kanyakumari', '4-oct-10', '8-oct-10');
+ insert into trains (trnum, tname, source, destination, departure_date, arrival_date) values (21454, 'konkan darshan', 'mumbai', 'thivim', '21-may-11', '22-may-11');
+ insert into trains (trnum, tname, source, destination, departure_date, arrival_date) values (10232, 'delhi champ', 'bhubhaneshwar', 'delhi', '4-feb-11', '5-feb-11');
+ insert into trains (trnum, tname, source, destination, departure_date, arrival_date) values (14785, 'chandigadh exp', 'mumbai', 'chandigadh', '21-dec-10', '23-dec-10');
+

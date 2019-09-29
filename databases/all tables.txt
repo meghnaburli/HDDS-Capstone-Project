@@ -1,0 +1,151 @@
+create table customer(pid int, pname varchar2(30), address varchar2(50), pnumber int, primary key(pid));
+create table trains (trnum int, tname varchar2(20), source varchar2(20), destination varchar2(20), departure_date date, arrival_date date, constraint trnum_unique UNIQUE (trnum));
+create table seat (seat_id int, t_num int, seat_type varchar2(20), status varchar(20), foreign key(t_num) references trains(trnum));
+create table journeys (p_id int, source_station varchar2(20), dest_station varchar2(20), cost int, foreign key(p_id) references customer(pid));
+
+
+
+insert into customer (pid, pname, address, pnumber) values (29, 'harsh', 'lokhandwala', 546952);
+ insert into customer (pid, pname, address, pnumber) values (22, 'dhrumil', 'thakurdwar', 455685);
+insert into customer (pid, pname, address, pnumber) values (32, 'soham', 'khetwadi', 524254);
+ insert into customer (pid, pname, address, pnumber) values (2, 'akul', 'oberoi mall', 45547);
+ insert into customer (pid, pname, address, pnumber) values (5, 'meghna', 'andheri', 4545646);
+ insert into customer (pid, pname, address, pnumber) values (7, 'tushar shah', 'marine drive', 52445);
+insert into customer (pid, pname, address, pnumber) values (19, 'abhishek ishwalkar', 'thakur complex', 447785);
+ insert into customer (pid, pname, address, pnumber) values (21, 'saloni', 'trupti', 45647);
+ insert into customer (pid, pname, address, pnumber) values (20, 'sonal parikh', 'lokhandwala', 44897);
+ insert into customer (pid, pname, address, pnumber) values (24, 'ankit dave', 'borivali', 447785);
+
+insert into customer (pid, pname, address, pnumber) values (25, 'aditi karkhanis', 'nimesh', 47455);
+insert into customer (pid, pname, address, pnumber) values (26, 'sanket', '4 bunglows', 745889);
+ insert into customer (pid, pname, address, pnumber) values (35, 'sahil singh', 'vile parle', 10210);
+insert into customer (pid, pname, address, pnumber) values (37, 'kushagra jain', 'borivali', 66557);
+insert into customer (pid, pname, address, pnumber) values(38, 'dilkush patel', 'gorgaon', 85492);
+insert into customer (pid, pname, address, pnumber) values (40, 'parth prabhu', 'ghatkopar', 95333);
+ insert into customer (pid, pname, address, pnumber) values (41, 'rahul prasad', 'malad', 9978);
+ insert into customer (pid, pname, address, pnumber) values (42, 'pooja potdar', 'marol', 20000);
+insert into customer (pid, pname, address, pnumber) values (56, 'shivee palejwala', 'earth', 85732);
+ insert into customer (pid, pname, address, pnumber) values (57, 'manasvi', 'lower parel', 5555);
+
+
+insert into customer (pid, pname, address, pnumber) values (45, 'ramesh', 'colaba', 2147);
+ insert into customer (pid, pname, address, pnumber) values (105, 'john', 'new jersey', 130025);
+insert into customer (pid, pname, address, pnumber) values (145, 'rahul shah', 'nana chowk', 147855);
+ insert into customer (pid, pname, address, pnumber) values (98, 'peter chaurasia', 'london', 7543);
+ insert into customer (pid, pname, address, pnumber) values(301, 'jeniffer patel', 'moscow', 44334);
+insert into customer (pid, pname, address, pnumber) values (122, 'raju patrick', 'chennai', 858484);
+insert into customer (pid, pname, address, pnumber) values (987, 'nisha aniston', 'bihar', 7543);
+ insert into customer (pid, pname, address, pnumber) values (547, 'rohan kapadia', 'fountain', 3210);
+ insert into customer (pid, pname, address, pnumber) values (555, 'arpit shah', 'colaba', 1588);
+ insert into customer (pid, pname, address, pnumber) values (358, 'priyank patel', 'lower parel', 3210);
+
+
+
+
+
+
+ insert into trains (trnum, tname, source, destination, departure_date, arrival_date) values (11011, 'konkan kanya', 'mumbai', 'thivim', '20-jun-10', '21-jun-10');
+ insert into trains (trnum, tname, source, destination, departure_date, arrival_date) values (12138, 'punjab mail', 'delhi', 'mumbai', '5-may-11','7-may-11');
+ insert into trains (trnum, tname, source, destination, departure_date, arrival_date) values (12904, 'golden temple', 'delhi', 'mumbai', '10-dec-11', '11-dec-11');
+ insert into trains (trnum, tname, source, destination, departure_date, arrival_date) values (12926, 'paschim exp', 'delhi', 'mumbai', '21-jun-10', '22-jun-10');
+ insert into trains (trnum, tname, source, destination, departure_date, arrival_date) values (19020, 'dehradun exp', 'delhi', 'mumbai', '5-may-11', '6-may-11');
+ insert into trains (trnum, tname, source, destination, departure_date, arrival_date) values (19215, 'saurashtra exp', 'mumbai', 'vadodra', '23-feb-11', '23-feb-11');
+ insert into trains (trnum, tname, source, destination, departure_date, arrival_date) values (12471, 'swaraj exp', 'mumbai', 'vadodra', '02-mar-10', '03-mar-10');
+ insert into trains (trnum, tname, source, destination, departure_date, arrival_date) values (59439, 'ahmadabad pass', 'mumbai', 'ahmadabad', '02-dec-11', '03-dec-11');
+ insert into trains (trnum, tname, source, destination, departure_date, arrival_date) values (12927, 'vadodra exp', 'mumbai', 'vadodra', '02-dec-11', '03-dec-11');
+ insert into trains (trnum, tname, source, destination, departure_date, arrival_date) values (12901, 'gujarat mail', 'mumbai', 'vadodra', '05-may-11', '06-may-11');
+
+ insert into trains (trnum, tname, source, destination, departure_date, arrival_date) values (12919, 'jaipur superfast', 'mumbai', 'jaipur', '15-apr-11', '16-apr-11');
+ insert into trains (trnum, tname, source, destination, departure_date, arrival_date) values (14649, 'saryuyamuna exp', 'lucknow', 'delhi', '4-sep-09', '4-sep-09');
+ insert into trains (trnum, tname, source, destination, departure_date, arrival_date) values (15279, 'poorbiya exp', 'lucknow', 'delhi', '26-oct-11', '27-oct-11');
+ insert into trains (trnum, tname, source, destination, departure_date, arrival_date) values (15715, 'garib nawaj exp', 'lucknow', 'delhi', '29-nov-11', '29-nov-11');
+ insert into trains (trnum, tname, source, destination, departure_date, arrival_date) values (12875, 'neelachal exp', 'lucknow', 'mumbai', '30-july-11', '30-july-11'); 
+ insert into trains (trnum, tname, source, destination, departure_date, arrival_date) values (14207, 'padmavat exp', 'lucknow', 'mumbai', '15-apr-10', '16-apr-10');
+ insert into trains (trnum, tname, source, destination, departure_date, arrival_date) values (12229, 'lucknow mail', 'lucknow', 'ahmedabad', '31-dec-10', '1-jan-11');
+ insert into trains (trnum, tname, source, destination, departure_date, arrival_date) values (16531, 'garib nawaj', 'ajmer', 'delhi', '23-feb-10', '23-feb-10');
+ insert into trains (trnum, tname, source, destination, departure_date, arrival_date) values (19708, 'aravali exp', 'ajmer', 'mumbai', '2-mar-10', '2-mar-10');
+ insert into trains (trnum, tname, source, destination, departure_date, arrival_date) values (10255, 'harsh exp', 'nashik', 'pune', '21-dec-10', '22-dec-10');
+
+ insert into trains (trnum, tname, source, destination, departure_date, arrival_date) values (14855, 'soham exp', 'cochin', 'banglore', '4-feb-11', '4-feb-11');
+ insert into trains (trnum, tname, source, destination, departure_date, arrival_date) values (12345, 'ramu mail', 'kolkata', 'mumbai', '9-apr-10', '10-apr-10');
+ insert into trains (trnum, tname, source, destination, departure_date, arrival_date) values (12500, 'bhopal exp', 'bhopal', 'delhi', '20-dec-10', '21-dec-10');
+ insert into trains (trnum, tname, source, destination, departure_date, arrival_date) values (17855, 'lalu exp', 'lucknow', 'ranchi', '30-nov-11', '30-nov-11');
+ insert into trains (trnum, tname, source, destination, departure_date, arrival_date) values (12035, 'jammu tawi', 'mumbai', 'jammu', '1-feb-11', '4-feb-11');
+ insert into trains (trnum, tname, source, destination, departure_date, arrival_date) values (10022, 'amritsar mail', 'pune', 'amritsar', '21-dec-10', '21-dec-10');
+ insert into trains (trnum, tname, source, destination, departure_date, arrival_date) values (20121, 'jhol train', 'jammu', 'kanyakumari', '4-oct-10', '8-oct-10');
+ insert into trains (trnum, tname, source, destination, departure_date, arrival_date) values (21454, 'konkan darshan', 'mumbai', 'thivim', '21-may-11', '22-may-11');
+ insert into trains (trnum, tname, source, destination, departure_date, arrival_date) values (10232, 'delhi champ', 'bhubhaneshwar', 'delhi', '4-feb-11', '5-feb-11');
+ insert into trains (trnum, tname, source, destination, departure_date, arrival_date) values (14785, 'chandigadh exp', 'mumbai', 'chandigadh', '21-dec-10', '23-dec-10');
+
+
+
+
+
+
+insert into seat (seat_id, t_num, seat_type, status) values (12, 12138, 'ub', 'confirmed');
+insert into seat (seat_id, t_num, seat_type, status) values (155, 11011, 'ub', 'confirmed');
+insert into seat (seat_id, t_num, seat_type, status) values (14, 12035, ' ', 'RAC');
+insert into seat (seat_id, t_num, seat_type, status) values (144,  10022, 'lb', 'confirmed');
+insert into seat (seat_id, t_num, seat_type, status) values (178, 20121, 'lb', 'confirmed');
+insert into seat (seat_id, t_num, seat_type, status) values (1225,  21454, 'ub', 'confirmed');
+insert into seat (seat_id, t_num, seat_type, status) values (222, 10232, ' ', 'WL');
+insert into seat (seat_id, t_num, seat_type, status) values (98, 14785, 'lb', 'confirmed');
+insert into seat (seat_id, t_num, seat_type, status) values (45, 12901, 'mb', 'confirmed');
+insert into seat (seat_id, t_num, seat_type, status) values (78, 15715, 'mb', 'confirmed');
+
+insert into seat (seat_id, t_num, seat_type, status) values (102, 17855, 'ub', 'confirmed');
+insert into seat (seat_id, t_num, seat_type, status) values (598, 12500, 'mb', 'confirmed');
+insert into seat (seat_id, t_num, seat_type, status) values (65, 12345, '', 'RAC');
+insert into seat (seat_id, t_num, seat_type, status) values (457, 14855, '', 'RAC');
+insert into seat (seat_id, t_num, seat_type, status) values (111, 10255, 'mb', 'confirmed');
+insert into seat (seat_id, t_num, seat_type, status) values (182,  19708, '', 'WL');
+insert into seat (seat_id, t_num, seat_type, status) values (941, 16531, 'ub', 'confirmed');
+insert into seat (seat_id, t_num, seat_type, status) values (35, 14207, 'ub', 'confirmed');
+insert into seat (seat_id, t_num, seat_type, status) values (650, 12229, '', 'WL');
+insert into seat (seat_id, t_num, seat_type, status) values (264, 12875, 'lb', 'confirmed');
+
+
+insert into seat (seat_id, t_num, seat_type, status) values (31, 12919, 'ub', 'confirmed');
+insert into seat (seat_id, t_num, seat_type, status) values (489, 14649, 'ub', 'confirmed');
+insert into seat (seat_id, t_num, seat_type, status) values (777, 15279, 'mb', 'confirmed');
+insert into seat (seat_id, t_num, seat_type, status) values (2, 12927, '', 'WL');
+insert into seat (seat_id, t_num, seat_type, status) values (99, 59439, '', 'WL');
+insert into seat (seat_id, t_num, seat_type, status) values (50, 12471, '', 'WL');
+insert into seat (seat_id, t_num, seat_type, status) values (166, 19215, '', 'WL');
+insert into seat (seat_id, t_num, seat_type, status) values (12, 19020, '', 'RAC');
+insert into seat (seat_id, t_num, seat_type, status) values (650, 12926, '', 'RAC');
+insert into seat (seat_id, t_num, seat_type, status) values (264, 12904, 'lb', 'confirmed');
+
+
+
+
+insert into journeys (p_id, source_station, dest_station, cost) values (22, 'mumbai', 'delhi', 1000);
+insert into journeys (p_id, source_station, dest_station, cost) values (29, 'kanyakumari', 'kolkata', 4000);
+insert into journeys (p_id, source_station, dest_station, cost) values (32, 'banglore', 'mumbai', 2145);
+insert into journeys (p_id, source_station, dest_station, cost) values (25, 'mumbai', 'pune', 2488);
+insert into journeys (p_id, source_station, dest_station, cost) values (2, 'mumbai', 'ahmedabad', 4500);
+insert into journeys (p_id, source_station, dest_station, cost) values (5, 'jaipur', 'delhi', 2500);
+insert into journeys (p_id, source_station, dest_station, cost) values (7, 'srinagar','shimla',8000);
+insert into  journeys (p_id, source_station, dest_station, cost) values (19, 'delhi','amritsar',2000);
+insert into  journeys (p_id, source_station, dest_station, cost) values (20, 'pune','nagpur',1400);
+insert into  journeys (p_id, source_station, dest_station, cost) values (24, 'chennai','delhi',14000);
+insert into  journeys (p_id, source_station, dest_station, cost) values (57, 'mumbai','chennai',8500);
+insert into  journeys (p_id, source_station, dest_station, cost) values (56, 'mumbai', 'delhi', 1000);
+insert into  journeys (p_id, source_station, dest_station, cost) values (21, 'mumbai', 'delhi', 1000);
+insert into  journeys (p_id, source_station, dest_station, cost) values (40, 'mumbai', 'delhi', 1000);
+insert into  journeys (p_id, source_station, dest_station, cost) values (41, 'vadodra','jaipur',6540);
+insert into  journeys (p_id, source_station, dest_station, cost) values (42, 'vadodra','jaipur',6540);
+insert into  journeys (p_id, source_station, dest_station, cost) values (38, 'vadodra','jaipur',6540);
+insert into  journeys (p_id, source_station, dest_station, cost) values (37, 'vadodra','jaipur',6540);
+insert into  journeys (p_id, source_station, dest_station, cost) values (35, 'delhi','amritsar',2000);
+insert into  journeys (p_id, source_station, dest_station, cost) values (26, 'delhi','amritsar',2000);
+insert into  journeys (p_id, source_station, dest_station, cost) values (45, 'pune','nagpur',1400);
+insert into  journeys (p_id, source_station, dest_station, cost) values (105, 'banglore', 'mumbai', 2145);
+insert into  journeys (p_id, source_station, dest_station, cost) values (145, 'banglore', 'mumbai', 2145);
+insert into  journeys (p_id, source_station, dest_station, cost) values (98, 'kolkata','pune',7400);
+insert into  journeys (p_id, source_station, dest_station, cost) values (301, 'kolkata','pune',7400);
+insert into  journeys (p_id, source_station, dest_station, cost) values (122, 'kolkata','pune',7400);
+insert into  journeys (p_id, source_station, dest_station, cost) values (987, 'chennai','delhi',14000);
+insert into  journeys (p_id, source_station, dest_station, cost) values (547, 'mumbai', 'pune', 2488);
+insert into  journeys (p_id, source_station, dest_station, cost) values (555, 'jaipur', 'delhi', 2500);
+insert into  journeys (p_id, source_station, dest_station, cost) values (358, 'chennai','delhi',14000);

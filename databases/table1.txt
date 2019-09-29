@@ -1,0 +1,33 @@
+insert into customer (pid, pname, address, pnumber) values (29, 'harsh', 'lokhandwala', 546952);
+ insert into customer (pid, pname, address, pnumber) values (22, 'dhrumil', 'thakurdwar', 455685);
+insert into customer (pid, pname, address, pnumber) values (32, 'soham', 'khetwadi', 524254);
+ insert into customer (pid, pname, address, pnumber) values (2, 'akul', 'oberoi mall', 45547);
+ insert into customer (pid, pname, address, pnumber) values (5, 'meghna', 'andheri', 4545646);
+ insert into customer (pid, pname, address, pnumber) values (7, 'tushar shah', 'marine drive', 52445);
+insert into customer (pid, pname, address, pnumber) values (19, 'abhishek ishwalkar', 'thakur complex', 447785);
+ insert into customer (pid, pname, address, pnumber) values (21, 'saloni', 'trupti', 45647);
+ insert into customer (pid, pname, address, pnumber) values (20, 'sonal parikh', 'lokhandwala', 44897);
+ insert into customer (pid, pname, address, pnumber) values (24, 'ankit dave', 'borivali', 447785);
+
+insert into customer (pid, pname, address, pnumber) values (25, 'aditi karkhanis', 'nimesh', 47455);
+insert into customer (pid, pname, address, pnumber) values (26, 'sanket', '4 bunglows', 745889);
+ insert into customer (pid, pname, address, pnumber) values (35, 'sahil singh', 'vile parle', 10210);
+insert into customer (pid, pname, address, pnumber) values (37, 'kushagra jain', 'borivali', 66557);
+insert into customer (pid, pname, address, pnumber) values(38, 'dilkush patel', 'gorgaon', 85492);
+insert into customer (pid, pname, address, pnumber) values (40, 'parth prabhu', 'ghatkopar', 95333);
+ insert into customer (pid, pname, address, pnumber) values (41, 'rahul prasad', 'malad', 9978);
+ insert into customer (pid, pname, address, pnumber) values (42, 'pooja potdar', 'marol', 20000);
+insert into customer (pid, pname, address, pnumber) values (56, 'shivee palejwala', 'earth', 85732);
+ insert into customer (pid, pname, address, pnumber) values (57, 'manasvi', 'lower parel', 5555);
+
+
+insert into customer (pid, pname, address, pnumber) values (45, 'ramesh', 'colaba', 2147);
+ insert into customer (pid, pname, address, pnumber) values (105, 'john', 'new jersey', 130025);
+insert into customer (pid, pname, address, pnumber) values (145, 'rahul shah', 'nana chowk', 147855);
+ insert into customer (pid, pname, address, pnumber) values (98, 'peter chaurasia', 'london', 7543);
+ insert into customer (pid, pname, address, pnumber) values(301, 'jeniffer patel', 'moscow', 44334);
+insert into customer (pid, pname, address, pnumber) values (122, 'raju patrick', 'chennai', 858484);
+insert into customer (pid, pname, address, pnumber) values (987, 'nisha aniston', 'bihar', 7543);
+ insert into customer (pid, pname, address, pnumber) values (547, 'rohan kapadia', 'fountain', 3210);
+ insert into customer (pid, pname, address, pnumber) values (555, 'arpit shah', 'colaba', 1588);
+ insert into customer (pid, pname, address, pnumber) values (358, 'priyank patel', 'lower parel', 3210);

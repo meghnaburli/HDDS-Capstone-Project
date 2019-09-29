@@ -1,0 +1,142 @@
+node 1 -harsh-vaio	//harsh
+sql 
+flight reservation
+
+passenger-aid,aname,sex
+flight-f_id,source,destination foreign ref journey
+journey=flight_id,cost,j_date,airline
+
+
+
+node2 2nd server-soham-pc
+soham
+access-database2 flight horizontal with node1 sql,passengers vertical with node1 sql
+flight-f_id,source,destination
+sales-sales_id,custname,amount
+passenger-aid,aname
+
+
+node3 	-harsh-pc
+oracle //railway reservation
+
+customer-pid,pname,address,pnumber
+trains-trnum,tname,source,destination,departure_date,arrival_date
+seat-seat_id,t_num,seat_type,status, foreign key on train_tnum
+journeys-p_id,source_station,dest_station,cost,foreign key on customers pid
+
+
+//above setup is the first setup between nodes//
+
+
+order of showin
+
+//fragmentation
+horizontal
+fragment sales on soham(2st node) and store on node3 oracle
+try fragmenting sales again-	wont allow 
+try fragmenting journey -		throws an error of relationship constraints
+
+vertical
+fragment customer and store on node 2;
+try again;
+xplain about primary key for lossless framgmentation
+
+
+//replication
+replicate access database n store on oracle node3;
+try repliacating it again from everywhere - 	throws an error of already replicated
+
+
+
+queries to be fired
+//select
+
+select * from loc:journey;     		access node;
+//	select * from  org:journey;     	";
+select * from  passenger;     		verticaly fragmented xplain how 2 table data with diff columns displayed;
+select * from  flight;			horizontal fragmented during setup ";
+select * from flight where f_id=1;	where support for two or more horizontal primaries
+select * from passenger where aid=1;	where support for 2 or more vertical primaries
+select * from loc:customer;		remote database accessed as a local
+
+
+
+
+
+
+
+
+//insert
+
+insert into customer(pid,pname)values(10,'harsh');				insert with col name
+select * from customer;
+insert into flight(f_id,source,destination)values(90,'mum','delhi');		insert into horizontal fragmented tables
+select * from flight;
+insert into passenger(aid,aname,sex)values(90,'harsh','male');			insert into vertical fragmented tables;
+select * from passenger;
+	//insert into animal('elephant','land');
+	//select * from animal;
+
+
+
+//joins
+1-1 join homogeneous n local;
+select a.f_id,b.flight_id,b.cost from flight as a,journey as b where a.f_id=b.flight_id;
+1-2 heterogeneous join
+select a.aid,b.pid from passenger as a,customer as b where a.aid=b.pid;			retreives data from 2 locations show that;
+
+xplain how data is being accessed n passed around 	
+
+
+
+//update
+		//update animal set name='giraffe' where name like 'e%';
+update passenger set sex='f' where aname like 'dhrumil';	update on vertical prim during setup
+	//update customer set pname='harsha' where pname like 'harsh';	node3
+update flight set source='a100' where source like 'm%';		//horizontal during setup
+
+xplain how a verticaly fragemted table is updated;
+
+
+
+
+
+
+
+//delete
+//delete from customer where pid=10;			normal table
+//select * from customer;
+delete from journey where flight_id=10;			horizontal table during setup
+select * from flight_id;
+delete from passenger where aid=1;			vertical fragmented during setup
+delete from frag:sales;
+select * from loc:sales;		(on the 3rd node pc)only the fragment goes from the node3
+delete from passenger where aid<10;					all the data goes from all tables;
+
+
+
+//truncate
+truncate table journeys;
+truncate table frag:trains;		since no fragments
+truncate table trains;			error coz foreign key reference
+truncate table frag:customer;			data goes from frag only;
+insert into customer(pid)values(1000);
+select * from loc:customer;		node2;
+truncate table customer;
+
+
+//drop 
+drop table frag:customer;	only the fragment goes show it in cnffile file n database view or queryprocessing
+//drop table sales;		all passneger table goes;
+drop table trains;		throws n error coz foreign reference;
+drop table sales;
+
+on node2 n node access database n now open node3 access replicated copy n
+xplain passenger table dropped;
+changes done on flight are reflected in replicated copy;
+
+
+//create 
+create table oracle:animal(name varchar2(20),type varchar2(20));
+//create table mammal(animal varchar2(20));		//show bydefault goes into access;
+

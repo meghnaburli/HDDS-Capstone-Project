@@ -1,0 +1,33 @@
+insert into seat (seat_id, t_num, seat_type, status) values (12, 12138, 'ub', 'confirmed');
+insert into seat (seat_id, t_num, seat_type, status) values (155, 11011, 'ub', 'confirmed');
+insert into seat (seat_id, t_num, seat_type, status) values (14, 12035, ' ', 'RAC');
+insert into seat (seat_id, t_num, seat_type, status) values (144,  10022, 'lb', 'confirmed');
+insert into seat (seat_id, t_num, seat_type, status) values (178, 20121, 'lb', 'confirmed');
+insert into seat (seat_id, t_num, seat_type, status) values (1225,  21454, 'ub', 'confirmed');
+insert into seat (seat_id, t_num, seat_type, status) values (222, 10232, ' ', 'WL');
+insert into seat (seat_id, t_num, seat_type, status) values (98, 14785, 'lb', 'confirmed');
+insert into seat (seat_id, t_num, seat_type, status) values (45, 12901, 'mb', 'confirmed');
+insert into seat (seat_id, t_num, seat_type, status) values (78, 15715, 'mb', 'confirmed');
+
+insert into seat (seat_id, t_num, seat_type, status) values (102, 17855, 'ub', 'confirmed');
+insert into seat (seat_id, t_num, seat_type, status) values (598, 12500, 'mb', 'confirmed');
+insert into seat (seat_id, t_num, seat_type, status) values (65, 12345, '', 'RAC');
+insert into seat (seat_id, t_num, seat_type, status) values (457, 14855, '', 'RAC');
+insert into seat (seat_id, t_num, seat_type, status) values (111, 10255, 'mb', 'confirmed');
+insert into seat (seat_id, t_num, seat_type, status) values (182,  19708, '', 'WL');
+insert into seat (seat_id, t_num, seat_type, status) values (941, 16531, 'ub', 'confirmed');
+insert into seat (seat_id, t_num, seat_type, status) values (35, 14207, 'ub', 'confirmed');
+insert into seat (seat_id, t_num, seat_type, status) values (650, 12229, '', 'WL');
+insert into seat (seat_id, t_num, seat_type, status) values (264, 12875, 'lb', 'confirmed');
+
+
+insert into seat (seat_id, t_num, seat_type, status) values (31, 12919, 'ub', 'confirmed');
+insert into seat (seat_id, t_num, seat_type, status) values (489, 14649, 'ub', 'confirmed');
+insert into seat (seat_id, t_num, seat_type, status) values (777, 15279, 'mb', 'confirmed');
+insert into seat (seat_id, t_num, seat_type, status) values (2, 12927, '', 'WL');
+insert into seat (seat_id, t_num, seat_type, status) values (99, 59439, '', 'WL');
+insert into seat (seat_id, t_num, seat_type, status) values (50, 12471, '', 'WL');
+insert into seat (seat_id, t_num, seat_type, status) values (166, 19215, '', 'WL');
+insert into seat (seat_id, t_num, seat_type, status) values (12, 19020, '', 'RAC');
+insert into seat (seat_id, t_num, seat_type, status) values (650, 12926, '', 'RAC');
+insert into seat (seat_id, t_num, seat_type, status) values (264, 12904, 'lb', 'confirmed');
